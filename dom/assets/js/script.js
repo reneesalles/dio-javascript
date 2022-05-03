@@ -10,13 +10,20 @@ const state = {
 function toggleLightDarkMode() {
     state.lightMode = !state.lightMode;
 
+    updateClasses();
+    updateTexts();
+}
+
+function updateTexts() {
+    h1.innerHTML = `${state.lightMode ? "Light" : "Dark"} Mode ON`;
+    button.innerHTML = `Turn ${!state.lightMode ? "Light" : "Dark"} Mode`;
+}
+
+function updateClasses() {
     body.classList.toggle("dark-mode", !state.lightMode);
     h1.classList.toggle("dark-mode", !state.lightMode);
     button.classList.toggle("dark-mode", !state.lightMode);
     footer.classList.toggle("dark-mode", !state.lightMode);
-
-    h1.innerHTML = `${state.lightMode ? "Light" : "Dark"} Mode ON`;
-    button.innerHTML = `Turn ${!state.lightMode ? "Light" : "Dark"} Mode`;
 }
 
 button.addEventListener("click", toggleLightDarkMode);

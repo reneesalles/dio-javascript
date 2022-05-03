@@ -10,6 +10,6 @@ Crie uma função que retorna o nome dos membros de um Map que tem o papel "ADMI
 2. Crie um Map e popule-o com nomes de usuários e seus papeis no sistema. Ex.: "Luiz" => "Admin";
 3. Dentro de <code>getAdmins</code>, utilize o loop <code>for...of</code> para retornar uma lista com os nomes dos usuários que são administradores.
 
-### Atividade 2: Sets
+## Atividade 2: Sets
 
 Dado o array <code>[30, 30, 40, 5, 223, 2049, 3034, 5]</code>, retorne outro array apenas com valores únicos
